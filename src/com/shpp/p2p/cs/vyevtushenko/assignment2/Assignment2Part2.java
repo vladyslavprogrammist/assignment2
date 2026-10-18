@@ -19,25 +19,25 @@ public class Assignment2Part2 extends WindowProgram {
         circle1.setColor(Color.BLACK);
         add(circle1);
 
-        GOval circle2 = new GOval(500, 0, APPLICATION_WIDTH, APPLICATION_HEIGHT);
+        GOval circle2 = new GOval(getWidth() + APPLICATION_WIDTH, 0, APPLICATION_WIDTH, APPLICATION_HEIGHT);
         circle2.setFilled(true);
         circle2.setColor(Color.BLACK);
         add(circle2);
 
-        GOval circle3 = new GOval(0, 500, APPLICATION_WIDTH, APPLICATION_HEIGHT);
+        GOval circle3 = new GOval(0, getHeight() + APPLICATION_HEIGHT, APPLICATION_WIDTH, APPLICATION_HEIGHT);
         circle3.setFilled(true);
         circle3.setColor(Color.BLACK);
         add(circle3);
 
-        GOval circle4 = new GOval(500, 500, APPLICATION_WIDTH, APPLICATION_HEIGHT);
+        GOval circle4 = new GOval(getWidth() + APPLICATION_WIDTH, getHeight() + APPLICATION_HEIGHT, APPLICATION_WIDTH, APPLICATION_HEIGHT);
         circle4.setFilled(true);
         circle4.setColor(Color.BLACK);
         add(circle4);
 
-        GRect square = new GRect(150, 150, 500, 500 );
-        square.setFilled(true);
-        square.setColor(Color.WHITE);
-        add(square);
+        GRect rectangle  = new GRect(APPLICATION_WIDTH / 2.0, APPLICATION_HEIGHT / 2.0, APPLICATION_WIDTH  + getWidth(), APPLICATION_HEIGHT + getHeight());
+        rectangle.setFilled(true);
+        rectangle.setColor(Color.WHITE);
+        add(rectangle);
 
     }
 }
